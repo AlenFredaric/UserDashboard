@@ -83,12 +83,5 @@ Email: test@example.com
 Password: Test@1234
 ```
 
----
-## 📌 Submission Guidelines
-- Ensure both **frontend** and **backend** are pushed to GitHub.
-- Provide a `.env.example` file with necessary environment variables.
-- Include instructions for setting up the project locally.
 
----
-### 🎯 Good luck! 🚀
 
