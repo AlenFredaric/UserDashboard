@@ -1,0 +1,136 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; /* Using Montserrat font for a modern look */
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.navbar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #fb0000; /* Modern orange color */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar button:hover {
+  background-color: #e53900; /* Slightly darker on hover */
+}
+
+/* Container Styles */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Auth Container Styles */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+}
+
+.auth-container input {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  transition: border-color 0.3s ease; /* Border color change on focus */
+}
+
+.auth-container input:focus {
+  border-color: #1c8ad9; /* Focus color */
+}
+
+.auth-container button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #1c8ad9;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #007bff; /* Slightly darker on hover */
+}
+
+/* Dashboard Styles */
+.dashboard {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 90%;
+  max-width: 600px;
+}
+
+.dashboard h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth-container, .dashboard {
+    width: 95%;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
+
+  .auth-container, .dashboard {
+    width: 100%;
+    padding: 1rem;
+  }
+}
